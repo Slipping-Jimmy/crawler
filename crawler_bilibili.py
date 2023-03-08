@@ -70,7 +70,7 @@ def find_missing():
 def rename_files():
     dir_path = Path('倚天屠龍記')
     for file_path in dir_path.iterdir():
-        new_name = re.sub('__', '_', file_path.name)
+        new_name = re.sub('回', '章', file_path.name)
         file_path.rename(dir_path.joinpath(new_name))
         
 
